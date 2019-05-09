@@ -309,8 +309,14 @@ class GridBox
 
 let newGrid = function(num,divgrid)
 {
+    //math: div.gridbox width (2.5)
+    // 100 / the width = (40)
+    // num %40 = remainder. remove the remainder from num and create.
+
+    let equalperrow = num - num%40;
+    
     let id;
-    for(let i=0; i < num; i++)
+    for(let i=0; i < equalperrow; i++)
     {
         let id = `s${i}`;
         let box = new GridBox(id,divgrid);

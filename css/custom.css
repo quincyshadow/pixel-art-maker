@@ -9,22 +9,27 @@
 
 div.gridbox
 {
-    width: 3%;
-    border: solid rgb(184, 184, 184) 1px;
+    width: 2.5%;
+    outline: solid rgb(184, 184, 184) 1px;
 }
 
-.div.gridbox::nth-child(1)
+.grid.row
 {
-    margin-left: -20px;
+    margin-bottom: 20px;
+}
+
+/* .div.gridbox::nth-child(1)
+{
+    margin-left: -1px;
 }
 
 div.gridbox:nth-child(n+1) {
     margin-left: -1px;
     margin-top: -1px;
-}
+} 
 
 /*css hack to keep 1:1 aspect */
-.palbox::before, .gridbox::before {
+.palbox::before, div.gridbox::before {
     content: "";
     display: block;
     padding-top: 100%;
