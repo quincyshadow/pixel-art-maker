@@ -1,0 +1,32 @@
+.palbox 
+{
+    width: 3%;
+    border: solid rgb(184, 184, 184) 1px;
+    border-radius: 30px;
+    margin-left:2px;
+    margin-bottom: 2px;
+}
+
+div.gridbox
+{
+    width: 3%;
+    border: solid rgb(184, 184, 184) 1px;
+}
+
+.div.gridbox::nth-child(1)
+{
+    margin-left: -20px;
+}
+
+div.gridbox:nth-child(n+1) {
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+/*css hack to keep 1:1 aspect */
+.palbox::before, .gridbox::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    /* initial ratio of 1:1*/
+  }
