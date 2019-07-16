@@ -8,7 +8,7 @@ const newLocal = `
 #FFFFCC
 #FFFF99
 #FFFF66
-#FFFF33
+#FFFF33asd
 #FFFF00
 #FFCCFF
 #FFCCCC
